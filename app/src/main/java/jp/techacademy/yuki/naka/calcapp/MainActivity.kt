@@ -11,7 +11,12 @@ class MainActivity : AppCompatActivity() {
 
         button1.setOnClickListener {
             // EditTextの文字列をTextViewに設定
-            textView.text = editText.text.toString()
+            textView.text = editText1.text.toString()
+        }
+
+        button2.setOnClickListener {
+            // EditTextの文字列をTextViewに設定
+            textView.text = editText2.text.toString()
         }
     }
 }

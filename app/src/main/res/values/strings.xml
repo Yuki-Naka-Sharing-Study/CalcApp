@@ -1,8 +1,9 @@
 <resources>
     <string name="app_name">CalcApp</string>
-    <string name="button">BUTTON</string>
-    <string name="button">BUTTON</string>
-    <string name="button">BUTTON</string>
-    <string name="button">BUTTON</string>
+    <string name="button1">BUTTON</string>
+    <string name="button2">BUTTON</string>
+    <string name="button3">BUTTON</string>
+    <string name="button4">BUTTON</string>
     <string name="textview">TextView</string>
+    <string name="button" />
 </resources>
