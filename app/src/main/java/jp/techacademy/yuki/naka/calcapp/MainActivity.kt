@@ -7,19 +7,18 @@ import kotlinx.android.synthetic.main.activity_main.*
 import android.content.Intent
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        button1.setOnClickListener {
-            // EditTextの文字列をTextViewに設定
-            textView.text = editText1.text.toString()
-        }
+        button1.setOnClickListener(this)
 
-        button2.setOnClickListener {
-            // EditTextの文字列をTextViewに設定
-            textView.text = editText2.text.toString()
-        }
+        button2.setOnClickListener(this)
+
+        button3.setOnClickListener(this)
+
+        button4.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
