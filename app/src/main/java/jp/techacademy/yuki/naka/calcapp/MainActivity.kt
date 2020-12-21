@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
 import android.content.Intent
+import kotlinx.android.synthetic.main.activity_second.*
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
@@ -12,10 +13,25 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        button1.setOnClickListener(this)
-        button2.setOnClickListener(this)
-        button3.setOnClickListener(this)
-        button4.setOnClickListener(this)
+        button1.setOnClickListener  {
+            // EditTextの文字列をTextViewに設定
+            textView.text = this.toString()
+        }
+
+        button2.setOnClickListener   {
+            // EditTextの文字列をTextViewに設定
+            textView.text = this.toString()
+        }
+
+        button3.setOnClickListener   {
+            // EditTextの文字列をTextViewに設定
+            textView.text = this.toString()
+        }
+
+        button4.setOnClickListener   {
+            // EditTextの文字列をTextViewに設定
+            textView.text = this.toString()
+        }
     }
 
     override fun onClick(v: View?) {
