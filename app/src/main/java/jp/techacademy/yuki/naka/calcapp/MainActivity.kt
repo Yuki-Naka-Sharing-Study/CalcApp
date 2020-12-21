@@ -14,23 +14,23 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(R.layout.activity_main)
 
         button1.setOnClickListener  {
-            // EditTextの文字列をTextViewに設定
-            textView.text = this.toString()
+            textView.text = editText1.text.toString()
+            textView.text = editText2.text.toString()
         }
 
         button2.setOnClickListener   {
-            // EditTextの文字列をTextViewに設定
-            textView.text = this.toString()
+            textView.text = editText1.text.toString()
+            textView.text = editText2.text.toString()
         }
 
         button3.setOnClickListener   {
-            // EditTextの文字列をTextViewに設定
-            textView.text = this.toString()
+            textView.text = editText1.text.toString()
+            textView.text = editText2.text.toString()
         }
 
         button4.setOnClickListener   {
-            // EditTextの文字列をTextViewに設定
-            textView.text = this.toString()
+            textView.text = editText1.text.toString()
+            textView.text = editText2.text.toString()
         }
     }
 
