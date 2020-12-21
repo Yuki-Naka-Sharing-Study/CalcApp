@@ -14,23 +14,23 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(R.layout.activity_main)
 
         button1.setOnClickListener  {
-            textView.text = editText1.text.toString()
-            textView.text = editText2.text.toString()
+            val num = editText1.text.toString()
+            val num2 = editText2.text.toString()
         }
 
         button2.setOnClickListener   {
-            textView.text = editText1.text.toString()
-            textView.text = editText2.text.toString()
+            val num = editText1.text.toString()
+            val num2 = editText2.text.toString()
         }
 
         button3.setOnClickListener   {
-            textView.text = editText1.text.toString()
-            textView.text = editText2.text.toString()
+            val num = editText1.text.toString()
+            val num2 = editText2.text.toString()
         }
 
         button4.setOnClickListener   {
-            textView.text = editText1.text.toString()
-            textView.text = editText2.text.toString()
+            val num = editText1.text.toString()
+            val num2 = editText2.text.toString()
         }
     }
 
