@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             val num2 = editText2.text.toString()
             val number : Int = Integer.parseInt(num)
             val number2 : Int = Integer.parseInt(num2)
-            val answer = number + number2
+            val answer = number - number2
         }
 
         button3.setOnClickListener   {
@@ -34,15 +34,15 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             val num2 = editText2.text.toString()
             val number : Int = Integer.parseInt(num)
             val number2 : Int = Integer.parseInt(num2)
-            val answer = number + number2
+            val answer = number * number2
         }
 
-        button4.setOnClickListener   {
+        button4.setOnClickListener    {
             val num = editText1.text.toString()
             val num2 = editText2.text.toString()
             val number : Int = Integer.parseInt(num)
             val number2 : Int = Integer.parseInt(num2)
-            val answer = number + number2
+            val answer = number / number2
         }
     }
 
