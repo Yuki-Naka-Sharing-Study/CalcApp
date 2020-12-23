@@ -8,6 +8,7 @@ import android.content.Intent
 import android.util.Log
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_second.*
+import java.lang.Double.parseDouble
 import java.lang.Float.parseFloat
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
@@ -17,11 +18,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(R.layout.activity_main)
 
         button1.setOnClickListener   {
-            val num  = editText1.text.toString()
-            val num2 = editText2.text.toString()
-            val number : Int = Integer.parseInt(num)
-            val number2 : Int = Integer.parseInt(num2)
-            val answer = number + number2
+            val num  = editText1.text.toString().toDouble()
+            val num2 = editText2.text.toString().toDouble()
+            val answer = num + num2
 
             val intent = Intent(this, SecondActivity::class.java)
             intent.putExtra("VALUE", answer)
@@ -29,11 +28,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         }
 
         button2.setOnClickListener   {
-            val num = editText1.text.toString()
-            val num2 = editText2.text.toString()
-            val number : Int = Integer.parseInt(num)
-            val number2 : Int = Integer.parseInt(num2)
-            val answer = number - number2
+            val num = editText1.text.toString().toDouble()
+            val num2 = editText2.text.toString().toDouble()
+            val answer = num - num2
 
             val intent = Intent(this, SecondActivity::class.java)
             intent.putExtra("VALUE", answer)
@@ -41,11 +38,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         }
 
         button3.setOnClickListener   {
-            val num = editText1.text.toString()
-            val num2 = editText2.text.toString()
-            val number : Int = Integer.parseInt(num)
-            val number2 : Int = Integer.parseInt(num2)
-            val answer = number * number2
+            val num = editText1.text.toString().toDouble()
+            val num2 = editText2.text.toString().toDouble()
+            val answer = num * num2
 
             val intent = Intent(this, SecondActivity::class.java)
             intent.putExtra("VALUE", answer)
@@ -53,11 +48,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         }
 
         button4.setOnClickListener    {
-            val num = editText1.text.toString()
-            val num2 = editText2.text.toString()
-            val number : Int = Integer.parseInt(num)
-            val number2 : Int = Integer.parseInt(num2)
-            val answer = number / number2
+            val num = editText1.text.toString().toDouble()
+            val num2 = editText2.text.toString().toDouble()
+            val answer = num / num2
 
             val intent = Intent(this, SecondActivity::class.java)
             intent.putExtra("VALUE", answer)
