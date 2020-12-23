@@ -11,7 +11,7 @@ class SecondActivity : AppCompatActivity() {
 
         val value = intent.getIntExtra("VALUE",0)
 
-        textView.text ="value"
+        textView.text ="${value}"
     }
 }
 

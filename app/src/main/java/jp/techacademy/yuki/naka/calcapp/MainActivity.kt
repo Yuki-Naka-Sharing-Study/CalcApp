@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             val answer = number + number2
 
             val intent = Intent(this, SecondActivity::class.java)
-            intent.putExtra("value", answer)
+            intent.putExtra("VALUE", answer)
             startActivity(intent)
         }
 
@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             val answer = number - number2
 
             val intent = Intent(this, SecondActivity::class.java)
-            intent.putExtra("value", answer)
+            intent.putExtra("VALUE", answer)
             startActivity(intent)
         }
 
@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             val answer = number * number2
 
             val intent = Intent(this, SecondActivity::class.java)
-            intent.putExtra("value", answer)
+            intent.putExtra("VALUE", answer)
             startActivity(intent)
         }
 
@@ -59,7 +59,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             val answer = number / number2
 
             val intent = Intent(this, SecondActivity::class.java)
-            intent.putExtra("value", answer)
+            intent.putExtra("VALUE", answer)
             startActivity(intent)
         }
     }
