@@ -20,25 +20,25 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/button"
+        android:text="@string/足し算"
         android:id="@+id/button1"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/button"
+        android:text="@string/引き算"
         android:id="@+id/button2"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/button"
+        android:text="@string/掛け算"
         android:id="@+id/button3"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/button"
+        android:text="@string/割り算"
         android:id="@+id/button4"/>
 
 </LinearLayout>

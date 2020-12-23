@@ -9,4 +9,8 @@
     <string name="secondactivity">SecondActivity</string>
     <string name="editText1" />
     <string name="editText2" />
+    <string name="足し算">足し算</string>
+    <string name="引き算">引き算</string>
+    <string name="掛け算">掛け算</string>
+    <string name="割り算">割り算</string>
 </resources>
