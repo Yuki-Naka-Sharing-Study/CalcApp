@@ -6,6 +6,7 @@ import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
 import android.content.Intent
 import android.util.Log
+import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_second.*
 import java.lang.Float.parseFloat
 
