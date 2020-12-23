@@ -5,7 +5,9 @@ import android.os.Bundle
 import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
 import android.content.Intent
+import android.util.Log
 import kotlinx.android.synthetic.main.activity_second.*
+import java.lang.Float.parseFloat
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
@@ -19,6 +21,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             val number : Int = Integer.parseInt(num)
             val number2 : Int = Integer.parseInt(num2)
             val answer = number + number2
+
+            val intent = Intent(this, SecondActivity::class.java)
+            intent.putExtra("value", answer)
+            startActivity(intent)
         }
 
         button2.setOnClickListener   {
@@ -27,6 +33,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             val number : Int = Integer.parseInt(num)
             val number2 : Int = Integer.parseInt(num2)
             val answer = number - number2
+
+            val intent = Intent(this, SecondActivity::class.java)
+            intent.putExtra("value", answer)
+            startActivity(intent)
         }
 
         button3.setOnClickListener   {
@@ -35,6 +45,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             val number : Int = Integer.parseInt(num)
             val number2 : Int = Integer.parseInt(num2)
             val answer = number * number2
+
+            val intent = Intent(this, SecondActivity::class.java)
+            intent.putExtra("value", answer)
+            startActivity(intent)
         }
 
         button4.setOnClickListener    {
@@ -43,12 +57,14 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             val number : Int = Integer.parseInt(num)
             val number2 : Int = Integer.parseInt(num2)
             val answer = number / number2
+
+            val intent = Intent(this, SecondActivity::class.java)
+            intent.putExtra("value", answer)
+            startActivity(intent)
         }
     }
 
     override fun onClick(v: View?) {
-        val intent = Intent(this, SecondActivity::class.java)
-        intent.putExtra("value",Int)
-        startActivity(intent)
+
       }
     }
