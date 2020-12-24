@@ -20,8 +20,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         button1.setOnClickListener   {
 
-            val num: Double? = "editText1".toString().toDouble()
-            val num2: Double? = "editText2".toString().toDouble()
+            val num: Double? = editText1.toString().toDouble()
+            val num2: Double? = editText2.toString().toDouble()
 
             val answer = num + num2
 
@@ -42,8 +42,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         button2.setOnClickListener   {
 
-            val num: Double? = "editText1".toString().toDouble()
-            val num2: Double? = "editText2".toString().toDouble()
+            val num: Double? = editText1.toString().toDouble()
+            val num2: Double? = editText2.toString().toDouble()
 
             val answer = num + num2
 
@@ -62,8 +62,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         button3.setOnClickListener   {
             
-            val num: Double? = "editText1".toString().toDouble()
-            val num2: Double? = "editText2".toString().toDouble()
+            val num: Double? = editText1.toString().toDouble()
+            val num2: Double? = editText2.toString().toDouble()
 
             val answer = num + num2
 
@@ -82,8 +82,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         button4.setOnClickListener    {
 
-            val num: Double? = "editText1".toString().toDouble()
-            val num2: Double? = "editText2".toString().toDouble()
+            val num: Double? = editText1.toString().toDouble()
+            val num2: Double? = editText2.toString().toDouble()
 
             val answer = num + num2
 
