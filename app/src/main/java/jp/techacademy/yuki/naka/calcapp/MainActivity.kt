@@ -19,9 +19,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(R.layout.activity_main)
 
         button1.setOnClickListener   {
-            val num: String? = "editText1.text.toString().toDouble()"
-            val num2: String? = "editText2.text.toString().toDouble()"
+
+            val num: Double? = "editText1".toString().toDouble()
+            val num2: Double? = "editText2".toString().toDouble()
+
             val answer = num + num2
+
 
             if (num.isEmpty() || num2.isEmpty()) {
                 // 「EditTextに何も値が入っていない」時
@@ -39,8 +42,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         button2.setOnClickListener   {
 
-            val num2 = editText2.text.toString().toDouble()
-            val answer = num - num2
+            val num: Double? = "editText1".toString().toDouble()
+            val num2: Double? = "editText2".toString().toDouble()
+
+            val answer = num + num2
+
 
             if (num.isEmpty() || num2.isEmpty()) {
                 // 「EditTextに何も値が入っていない」時
@@ -55,9 +61,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         }
 
         button3.setOnClickListener   {
+            
+            val num: Double? = "editText1".toString().toDouble()
+            val num2: Double? = "editText2".toString().toDouble()
 
-            val num2 = editText2.text.toString().toDouble()
-            val answer = num * num2
+            val answer = num + num2
+
 
             if (num.isEmpty() || num2.isEmpty()) {
                 // 「EditTextに何も値が入っていない」時
@@ -73,8 +82,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         button4.setOnClickListener    {
 
-            val num2 = editText2.text.toString().toDouble()
-            val answer = num / num2
+            val num: Double? = "editText1".toString().toDouble()
+            val num2: Double? = "editText2".toString().toDouble()
+
+            val answer = num + num2
+
 
             if (num.isEmpty() || num2.isEmpty()) {
                 // 「EditTextに何も値が入っていない」時
