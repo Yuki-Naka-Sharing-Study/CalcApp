@@ -8,6 +8,7 @@ import android.content.Intent
 import android.util.Log
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_second.*
+import org.w3c.dom.Text
 import java.lang.Double.parseDouble
 import java.lang.Float.parseFloat
 
@@ -22,9 +23,18 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             val num2 = editText2.text.toString().toDouble()
             val answer = num + num2
 
-            val intent = Intent(this, SecondActivity::class.java)
-            intent.putExtra("VALUE", answer)
-            startActivity(intent)
+            if (num != null || num2 != null) {
+                // 「EditTextに何も値が入っていない」時
+                val snackbar = Snackbar.make(textView, "何か数値を入力してください", Snackbar.LENGTH_LONG)
+                val intent = Intent(this, SecondActivity::class.java)
+                intent.putExtra("SNACKBAR", snackbar)
+                startActivity(intent)
+            } else {
+                // 「EditTextに文字が書かれてある」時
+                val intent = Intent(this, SecondActivity::class.java)
+                intent.putExtra("ANSWER", answer)
+                startActivity(intent)
+            }
         }
 
         button2.setOnClickListener   {
@@ -32,9 +42,16 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             val num2 = editText2.text.toString().toDouble()
             val answer = num - num2
 
-            val intent = Intent(this, SecondActivity::class.java)
-            intent.putExtra("VALUE", answer)
-            startActivity(intent)
+            if (num != null || num2 != null) {
+                // 「EditTextに何も値が入っていない」時
+                val snackbar = Snackbar.make(textView, "何か数値を入力してください", Snackbar.LENGTH_LONG)
+                snackbar.show()
+            } else {
+                // 「EditTextに文字が書かれてある」時
+                val intent = Intent(this, SecondActivity::class.java)
+                intent.putExtra("VALUE", answer)
+                startActivity(intent)
+            }
         }
 
         button3.setOnClickListener   {
@@ -42,9 +59,16 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             val num2 = editText2.text.toString().toDouble()
             val answer = num * num2
 
-            val intent = Intent(this, SecondActivity::class.java)
-            intent.putExtra("VALUE", answer)
-            startActivity(intent)
+            if (num != null || num2 != null) {
+                // 「EditTextに何も値が入っていない」時
+                val snackbar = Snackbar.make(textView, "何か数値を入力してください", Snackbar.LENGTH_LONG)
+                snackbar.show()
+            } else {
+                // 「EditTextに文字が書かれてある」時
+                val intent = Intent(this, SecondActivity::class.java)
+                intent.putExtra("VALUE", answer)
+                startActivity(intent)
+            }
         }
 
         button4.setOnClickListener    {
@@ -52,9 +76,16 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             val num2 = editText2.text.toString().toDouble()
             val answer = num / num2
 
-            val intent = Intent(this, SecondActivity::class.java)
-            intent.putExtra("VALUE", answer)
-            startActivity(intent)
+            if (num != null || num2 != null) {
+                // 「EditTextに何も値が入っていない」時
+                val snackbar = Snackbar.make(textView, "何か数値を入力してください", Snackbar.LENGTH_LONG)
+                snackbar.show()
+            } else {
+                // 「EditTextに文字が書かれてある」時
+                val intent = Intent(this, SecondActivity::class.java)
+                intent.putExtra("VALUE", answer)
+                startActivity(intent)
+            }
         }
     }
 
@@ -62,3 +93,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
       }
     }
+
+private fun Intent.putExtra(s: String, snackbar: Snackbar) {
+
+}
