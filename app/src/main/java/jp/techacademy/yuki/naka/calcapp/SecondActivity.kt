@@ -12,9 +12,10 @@ class SecondActivity : AppCompatActivity() {
         setContentView(R.layout.activity_second)
 
         val answer = intent.getDoubleExtra("ANSWER",0.0)
+        val snackbar2 = intent.getStringExtra("SANCKBAR","なし")
 
         textView.text ="${answer}"
-        textView.text ="${}"
+        textView.text ="${snackbar2}"
     }
 }
 
