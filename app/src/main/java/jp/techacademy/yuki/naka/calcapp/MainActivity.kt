@@ -19,8 +19,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(R.layout.activity_main)
 
         button1.setOnClickListener   {
-            val num  = editText1.text.toString().toDouble()
-            val num2 = editText2.text.toString().toDouble()
+            val num: String? = "editText1.text.toString().toDouble()"
+            val num2: String? = "editText2.text.toString().toDouble()"
             val answer = num + num2
 
             if (num != null || num2 != null) {
@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         }
 
         button2.setOnClickListener   {
-            val num = editText1.text.toString().toDouble()
+
             val num2 = editText2.text.toString().toDouble()
             val answer = num - num2
 
@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         }
 
         button3.setOnClickListener   {
-            val num = editText1.text.toString().toDouble()
+
             val num2 = editText2.text.toString().toDouble()
             val answer = num * num2
 
@@ -72,7 +72,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         }
 
         button4.setOnClickListener    {
-            val num = editText1.text.toString().toDouble()
+
             val num2 = editText2.text.toString().toDouble()
             val answer = num / num2
 
