@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 // 「EditTextに何も値が入っていない」時
                 val snackbar = Snackbar.make(textView, "何か数値を入力してください", Snackbar.LENGTH_LONG)
                 val intent = Intent(this, SecondActivity::class.java)
-                intent.putExtra("SNACKBAR", snackbar2)
+                intent.putExtra("SNACKBAR", snackbar)
                 startActivity(intent)
             } else {
                 // 「EditTextに文字が書かれてある」時
