@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             val num2: String? = "editText2.text.toString().toDouble()"
             val answer = num + num2
 
-            if (num != null || num2 != null) {
+            if (num.isEmpty() || num2.isEmpty()) {
                 // 「EditTextに何も値が入っていない」時
                 val snackbar = Snackbar.make(textView, "何か数値を入力してください", Snackbar.LENGTH_LONG)
                 val intent = Intent(this, SecondActivity::class.java)
@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             val num2 = editText2.text.toString().toDouble()
             val answer = num - num2
 
-            if (num != null || num2 != null) {
+            if (num.isEmpty() || num2.isEmpty()) {
                 // 「EditTextに何も値が入っていない」時
                 val snackbar = Snackbar.make(textView, "何か数値を入力してください", Snackbar.LENGTH_LONG)
                 snackbar.show()
@@ -59,7 +59,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             val num2 = editText2.text.toString().toDouble()
             val answer = num * num2
 
-            if (num != null || num2 != null) {
+            if (num.isEmpty() || num2.isEmpty()) {
                 // 「EditTextに何も値が入っていない」時
                 val snackbar = Snackbar.make(textView, "何か数値を入力してください", Snackbar.LENGTH_LONG)
                 snackbar.show()
@@ -76,7 +76,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             val num2 = editText2.text.toString().toDouble()
             val answer = num / num2
 
-            if (num != null || num2 != null) {
+            if (num.isEmpty() || num2.isEmpty()) {
                 // 「EditTextに何も値が入っていない」時
                 val snackbar = Snackbar.make(textView, "何か数値を入力してください", Snackbar.LENGTH_LONG)
                 snackbar.show()
