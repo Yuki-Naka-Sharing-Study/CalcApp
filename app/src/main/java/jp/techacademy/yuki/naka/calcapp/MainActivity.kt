@@ -39,11 +39,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         }
 
-        button2.setOnClickListener   {
+        button2.setOnClickListener   { view ->
 
             if (editText1.text.isEmpty() || editText2.text.isEmpty()) {
                 //「editTextに片方でも何も値が入っていない」場合
-                Snackbar.make(textView, "何か数値を入力してください", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "何か数値を入力してください", Snackbar.LENGTH_LONG)
                         .setAction("Action"){
                             Log.d("UI_PARTS", "Snackbarをタップした")
                         }.show()
@@ -59,11 +59,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         }
 
-        button3.setOnClickListener   {
+        button3.setOnClickListener   { view ->
 
             if (editText1.text.isEmpty() || editText2.text.isEmpty()) {
                 //「editTextに片方でも何も値が入っていない」場合
-                Snackbar.make(textView, "何か数値を入力してください", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "何か数値を入力してください", Snackbar.LENGTH_LONG)
                         .setAction("Action"){
                             Log.d("UI_PARTS", "Snackbarをタップした")
                         }.show()
@@ -79,11 +79,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         }
 
-        button4.setOnClickListener    {
+        button4.setOnClickListener    { view ->
 
             if (editText1.text.isEmpty() || editText2.text.isEmpty()) {
                 //「editTextに片方でも何も値が入っていない」場合
-                Snackbar.make(textView, "何か数値を入力してください", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "何か数値を入力してください", Snackbar.LENGTH_LONG)
                         .setAction("Action"){
                             Log.d("UI_PARTS", "Snackbarをタップした")
                         }.show()
