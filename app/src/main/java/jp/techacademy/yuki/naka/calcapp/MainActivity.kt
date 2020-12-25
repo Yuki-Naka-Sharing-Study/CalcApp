@@ -18,15 +18,17 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        button1.setOnClickListener   {
+        button1.setOnClickListener   { view ->
+
             if (editText1.text.isEmpty() || editText2.text.isEmpty()) {
                 //「editTextに片方でも何も値が入っていない」場合
-                val snackbar = Snackbar.make(textView, "何か数値を入力してください", Snackbar.LENGTH_LONG)
-                val intent = Intent(this, SecondActivity::class.java)
-                intent.putExtra("SNACKBAR", snackbar)
-                startActivity(intent)
+                Snackbar.make(view, "何か数値を入力してください", Snackbar.LENGTH_LONG)
+                        .setAction("Action"){
+                            Log.d("UI_PARTS", "数値が入力されていないようです。")
+                        }.show()
             } else {
                 //「editTextに両方共何か値が入っている」場合
+                Log.d("UI_PARTS", "四則計算できてます。")
                 val num = editText1.text.toString().toDouble()
                 val num2 = editText1.text.toString().toDouble()
                 val answer = num + num2
@@ -34,17 +36,66 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 intent.putExtra("ANSWER", answer)
                 startActivity(intent)
             }
+
         }
 
         button2.setOnClickListener   {
+
+            if (editText1.text.isEmpty() || editText2.text.isEmpty()) {
+                //「editTextに片方でも何も値が入っていない」場合
+                Snackbar.make(textView, "何か数値を入力してください", Snackbar.LENGTH_LONG)
+                        .setAction("Action"){
+                            Log.d("UI_PARTS", "Snackbarをタップした")
+                        }.show()
+            } else {
+                //「editTextに両方共何か値が入っている」場合
+                val num = editText1.text.toString().toDouble()
+                val num2 = editText1.text.toString().toDouble()
+                val answer = num - num2
+                val intent = Intent(this, SecondActivity::class.java)
+                intent.putExtra("ANSWER", answer)
+                startActivity(intent)
+            }
 
         }
 
         button3.setOnClickListener   {
 
+            if (editText1.text.isEmpty() || editText2.text.isEmpty()) {
+                //「editTextに片方でも何も値が入っていない」場合
+                Snackbar.make(textView, "何か数値を入力してください", Snackbar.LENGTH_LONG)
+                        .setAction("Action"){
+                            Log.d("UI_PARTS", "Snackbarをタップした")
+                        }.show()
+            } else {
+                //「editTextに両方共何か値が入っている」場合
+                val num = editText1.text.toString().toDouble()
+                val num2 = editText1.text.toString().toDouble()
+                val answer = num * num2
+                val intent = Intent(this, SecondActivity::class.java)
+                intent.putExtra("ANSWER", answer)
+                startActivity(intent)
+            }
+
         }
 
         button4.setOnClickListener    {
+
+            if (editText1.text.isEmpty() || editText2.text.isEmpty()) {
+                //「editTextに片方でも何も値が入っていない」場合
+                Snackbar.make(textView, "何か数値を入力してください", Snackbar.LENGTH_LONG)
+                        .setAction("Action"){
+                            Log.d("UI_PARTS", "Snackbarをタップした")
+                        }.show()
+            } else {
+                //「editTextに両方共何か値が入っている」場合
+                val num = editText1.text.toString().toDouble()
+                val num2 = editText1.text.toString().toDouble()
+                val answer = num / num2
+                val intent = Intent(this, SecondActivity::class.java)
+                intent.putExtra("ANSWER", answer)
+                startActivity(intent)
+            }
 
         }
     }
